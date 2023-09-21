@@ -7,5 +7,25 @@
 </head>
 <body>
     Hi, I am Ritik Prakash! I am learning git with tanay pratap sir!
+    
+    <button onclick="leapYearcheck()">Leap Year Check</button>
+
+
+    <p id="para"></p>
+
+    <script>
+
+        let para = document.getElementById('para');
+        function leapYearcheck()
+        {
+            let year = prompt("Enter Year!");
+
+            if(year%4==0)
+            para.innerHTML = "Leap Year";
+
+            else
+            para.innerHTML= "Not a Leap Year";
+        }
+    </script>
 </body>
 </html>
