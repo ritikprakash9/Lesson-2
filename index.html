@@ -48,6 +48,12 @@
         color: black;
         border: 2px solid #D16BA5;
     }
+
+    #para
+    {
+        color: #023020;
+        font-weight: bold;
+    }
 </style>
 <body>
     <p> Hi, I am Ritik Prakash! I am learning git with tanay pratap sir!</p>
@@ -63,10 +69,11 @@
         function leapYearcheck()
         {
             let year = prompt("Enter Year!");
+            
+            if(year == null || year == '')
+            para.innerHTML = "";
 
-            console.log(year);
-
-            if(year%4==0)
+            else if(year%4==0)
             para.innerHTML = "Leap Year";
 
             else if(year%400==0 && year%100!=0)
